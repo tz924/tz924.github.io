@@ -1,3 +1,50 @@
-.nav-link__home {
-  text-decoration: underline;
+@import "styles.css";
+
+.nav-link__home a {
+  color: white;
+}
+
+body {
+  background-color: var(--lightest-grey);
+  border: var(--grey) solid 3rem;
+  border-radius: 2rem;
+  font-family: 'Prociono', serif;
+}
+
+.quote {
+  padding: 0 max(10%, 5rem);
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.quote .yellow {
+  color: var(--mustard);
+}
+
+.quote .grey {
+  color: var(--grey);
+}
+
+.quote .red {
+  color: var(--red);
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile .name {
+  text-decoration: none;
+  color: var(--text);
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+}
+
+.profile img {
+  margin-top: 3rem;
+  width: 100%;
+  border-radius: .5rem;
 }

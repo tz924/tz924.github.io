@@ -1,3 +1,139 @@
-.nav-link__resume {
-  text-decoration: underline;
+@import "styles.css";
+
+/* Navigation */
+.nav-link__resume a {
+  color: white;
+}
+
+/* Skills */
+.skills {
+  width: 100%;
+  --beginner: 10%;
+  --intermediate: 40%;
+  --advanced: 70%;
+  --ninja: 100%;
+}
+
+.programming-languages {
+  position: relative;
+  margin-right: 20%;
+  line-height: 2rem;
+  overflow: hidden;
+}
+
+.skill {
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.skill li {
+  margin-bottom: 70px;
+  background-color: black;
+  height: .6rem;
+  border-radius: .2rem;
+  border: 1px solid black;
+}
+
+.skill__bar {
+  position: absolute;
+  height: .5rem;
+  margin: 1px 0;
+  background: var(--blue);
+  box-shadow: 0px 0px 5px 1px rgba(15, 49, 173, 0.6);
+}
+
+.skill__text {
+  position: relative;
+  top: -3rem;
+  font-size: 1rem;
+}
+
+/* Programming Languages */
+.javascript {
+  width: var(--ninja);
+}
+
+.typescript {
+  width: var(--intermediate);
+}
+
+.python {
+  width: var(--ninja);
+}
+
+.java {
+  width: var(--advanced);
+}
+
+.php {
+  width: var(--ninja);
+}
+
+.c {
+  width: var(--intermediate);
+}
+
+.cpp {
+  width: var(--advanced);
+}
+
+.csharp {
+  width: var(--beginner);
+}
+
+.ruby {
+  width: var(--advanced);
+}
+
+.go {
+  width: var(--beginner);
+}
+
+.kotlin {
+  width: var(--ninja);
+}
+
+.swift {
+  width: var(--intermediate);
+}
+
+.matlab {
+  width: var(--advanced);
+}
+
+.r {
+  width: var(--ninja);
+}
+
+.haskell {
+  width: var(--beginner);
+}
+
+.scala {
+  width: var(--intermediate);
+}
+
+.lisp {
+  width: var(--intermediate);
+}
+
+.sql {
+  width: var(--ninja);
+}
+
+.lua {
+  width: var(--intermediate);
+}
+
+.julia {
+  width: var(--beginner);
+}
+
+.bracket {
+  width: var(--intermediate);
+}
+
+/* Activities */
+.activities {
+  float: left;
 }

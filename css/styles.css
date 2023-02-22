@@ -1,8 +1,158 @@
 /* >= 5 Rules */
+@import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&family=Prociono&display=swap');
+
+:root {
+  --mustard: #ffdb58;
+  --dark-mustard: #f0ce52;
+  --darker-mustard: #e1c14c;
+  --darkest-mustard: #d0b246;
+  --red: #ff2a04;
+  --dark-red: #cc2103;
+  --darker-red: #991902;
+  --darkest-red: #661001;
+  --light-red: #ff5436;
+  --lighter-red: #ff7f68;
+  --lightest-red: #ffa99a;
+  --grey: #576675;
+  --light-grey: #7c8893;
+  --lighter-grey: #a2aab2;
+  --lightest-grey: #c7ccd1;
+  --text-color: black;
+  --blue: #6a87f2;
+  --dark-blue: #0f31ad;
+}
+
+html,
+body {
+  /* Clear styles */
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  min-height: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Economica', sans-serif;
+  font-weight: bold;
+}
+
+/* Navigation */
+nav {
+  font-family: 'Economica', sans-serif;
+  font-size: 2rem;
+}
+
 nav ul {
   list-style-type: none;
 }
 
 nav a {
   text-decoration: none;
+  color: var(--text-color);
+}
+
+nav ul>li {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+}
+
+nav ul>li:first-child {
+  margin-left: 3rem;
+}
+
+/* Body */
+body {
+  background-color: var(--dark-mustard);
+  border: var(--mustard) solid 3rem;
+  border-radius: 2rem;
+  font-family: 'Prociono', serif;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+/* Word Cloud */
+.cloud {
+  /* Clear styling */
+  list-style: none;
+  padding-left: 0;
+  margin: 0 max(15%, 8rem);
+
+  /* Make cloud */
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Centering */
+  align-items: center;
+  justify-content: center;
+  line-height: 3rem;
+}
+
+.cloud li[data-weight="1"] {
+  --size: 1;
+}
+
+.cloud li[data-weight="2"] {
+  --size: 2;
+}
+
+.cloud li[data-weight="3"] {
+  --size: 3;
+}
+
+.cloud li[data-weight="4"] {
+  --size: 4;
+}
+
+.cloud li[data-weight="5"] {
+  --size: 5;
+}
+
+.cloud li[data-weight="6"] {
+  --size: 6;
+}
+
+.cloud li[data-weight="7"] {
+  --size: 7;
+}
+
+.cloud li[data-weight="8"] {
+  --size: 8;
+}
+
+.cloud li[data-weight="9"] {
+  --size: 9;
+}
+
+.cloud li:nth-child(2n+1) {
+  --color: darkgreen;
+}
+
+.cloud li:nth-child(3n+1) {
+  --color: var(--blue);
+}
+
+.cloud li:nth-child(4n+1) {
+  --color: var(--red);
+}
+
+.cloud li:nth-child(5n+1) {
+  --color: var(--dark-blue);
+}
+
+.cloud li {
+  display: block;
+  position: relative;
+  color: var(--color);
+  padding: 0.2rem 0.5rem;
+
+  font-size: calc(var(--size) * 0.3rem + 1rem);
+  opacity: calc((20 - (8 - var(--size))) / 20);
 }
