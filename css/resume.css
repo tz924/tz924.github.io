@@ -43,7 +43,6 @@ body {
   background-color: black;
   height: .6rem;
   border-radius: .2rem;
-  border: 1px solid black;
 }
 
 .skill__bar {
@@ -188,11 +187,6 @@ body {
   font-size: 1.25rem;
 }
 
-.job__location {}
-
-
-.job__highlights {}
-
 .other__skills {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -206,7 +200,6 @@ body {
 }
 
 .activities ul {
-  display: flexbox;
   list-style: none;
 }
 
