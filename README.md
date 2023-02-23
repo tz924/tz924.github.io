@@ -7,5 +7,5 @@
    None.
 
 3. Say approximately how many hours you have spent completing the lab.
-   6 hours for the content.
-   2 hours for implementation.
+   10+ hours for the content - I literally have never formally worked any formal jobs and have no idea how to write a resume. 
+   5 hours for implementation.
