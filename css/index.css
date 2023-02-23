@@ -4,6 +4,10 @@
   color: white;
 }
 
+.nav-link__audio {
+  float: right;
+}
+
 body {
   background-color: var(--lightest-grey);
   border: var(--grey) solid 3rem;

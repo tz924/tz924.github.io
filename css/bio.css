@@ -9,6 +9,85 @@ body {
   border: var(--red) solid 3rem;
 }
 
+/* Bio  */
+.bio {
+  margin: 2rem calc(2vw + 2rem);
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.bio__profile {
+  max-width: 10rem;
+  padding: 2rem 0;
+}
+
+.bio__tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bio__radio-tab {
+  position: absolute;
+  opacity: 0;
+}
+
+.bio__label {
+  width: 100%;
+  background-color: var(--lightest-grey);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--lighter-grey);
+}
+
+.bio__label:hover {
+  background-color: var(--light-grey);
+}
+
+.bio__label:active {
+  background-color: white;
+}
+
+.bio__radio-tab:checked+.bio__label {
+  background: white;
+  color: var(--text-color);
+  border: solid 2px var(--text-color);
+  border-bottom: none;
+}
+
+.bio__panel {
+  display: none;
+  width: 100%;
+  background-color: white;
+  border: solid 2px var(--text-color);
+  border-top: none;
+  padding: 2rem 5rem;
+  text-align: left;
+}
+
+input:checked+.bio__label+.bio__panel {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  .bio {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .bio__panel {
+    padding: 1rem 2rem;
+  }
+}
+
+/* Word Cloud */
 .cloud li:nth-child(3n+1) {
   --color: var(--grey);
 }
@@ -19,4 +98,8 @@ body {
 
 .cloud li:nth-child(5n+1) {
   --color: var(--dark-blue);
+}
+
+.bio__titles {
+  padding-bottom: 3.5rem;
 }
