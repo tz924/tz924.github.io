@@ -32,6 +32,8 @@ body {
   background-color: white;
   min-height: 100%;
   width: 100%;
+  font-size: 1.15rem;
+  line-height: 2rem;
 }
 
 h1,
@@ -76,15 +78,8 @@ nav ul>li:first-child {
 }
 
 /* Body */
-body {
-  background-color: var(--dark-mustard);
-  border: var(--mustard) solid 3rem;
-  border-radius: 2rem;
-  font-family: 'Prociono', serif;
-}
-
 main {
-  padding: 1.5rem;
+  padding: 1rem calc(1% + 4rem);
 }
 
 /* Word Cloud */
