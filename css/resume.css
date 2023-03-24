@@ -5,8 +5,31 @@
   color: white;
 }
 
+/* Profile */
 .profile {
   text-align: center;
+}
+
+.profile__name {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.profile__email {
+  display: none;
+  font-family: "Prociono", serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+.profile__number {
+  display: none;
+  font-family: "Prociono", serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 1rem;
 }
 
 /* Background */
@@ -14,7 +37,7 @@ body {
   background-color: var(--mustard);
   border: var(--darker-mustard) solid 3rem;
   border-radius: 2rem;
-  font-family: 'Prociono', serif;
+  font-family: "Prociono", serif;
 }
 
 /* Skills */
@@ -41,13 +64,13 @@ body {
 .skill li {
   margin-bottom: 70px;
   background-color: black;
-  height: .6rem;
-  border-radius: .2rem;
+  height: 0.6rem;
+  border-radius: 0.2rem;
 }
 
 .skill__bar {
   position: absolute;
-  height: .5rem;
+  height: 0.5rem;
   margin: 1px 0;
   background: var(--blue);
   box-shadow: 0px 0px 5px 1px rgba(15, 49, 173, 0.6);
@@ -147,7 +170,7 @@ body {
 /* School */
 .school {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: fit-content repeat(2, 1fr);
   grid-template-columns: 25% 75%;
   padding-bottom: 1rem;
 }
@@ -157,13 +180,23 @@ body {
   grid-column: 1 / 2;
 }
 
+.school__program {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  font-size: 1.5rem;
+}
+
 .school__name {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.school__program {
-  font-size: 1.5rem;
+.school__location {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  font-size: 1.25rem;
 }
 
 /* Job */
@@ -206,7 +239,139 @@ body {
 .profile {
   text-decoration: none;
   color: var(--text);
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 4rem;
   padding-top: 1rem;
+}
+
+/* Printing */
+@media print {
+  body {
+    background-color: #fff;
+    border: none;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* School */
+  .school__program {
+    font-size: 1rem;
+  }
+
+  .school__name {
+    font-size: 1rem;
+  }
+
+  .school__location {
+    font-size: 1rem;
+  }
+
+  .school__range {
+    font-size: 1rem;
+  }
+
+  /* Job */
+  .job__title {
+    font-size: 1rem;
+  }
+
+  .job__company {
+    font-size: 1rem;
+  }
+
+  .job__range {
+    font-size: 1rem;
+  }
+
+  .job__highlights {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  /* Activities */
+  .activities {
+    font-size: 1rem;
+  }
+
+  /* Profile */
+  .profile {
+    font-size: 1rem;
+  }
+
+  /* Other Skills */
+  .other__skills {
+    font-size: 1rem;
+  }
+
+  /* Programming Languages */
+  .skill li {
+    display: inline-block;
+    padding: 0 1rem;
+    margin: 0;
+  }
+  .skill__text {
+    font-size: 1rem;
+    display: inline-block;
+  }
+
+  .skill__bar {
+    display: none;
+  }
+
+  .cloud {
+    margin: 0;
+    padding: 0;
+  }
+
+  .cloud li {
+    display: block;
+    position: relative;
+    color: var(--color);
+    padding: 0.2rem 0.5rem;
+    font-size: calc(var(--size) * 0.2rem + 0.3rem);
+    opacity: calc((20 - (8 - var(--size))) / 20);
+  }
+
+  div.profile {
+    font-size: 1rem;
+  }
+
+  .profile__name {
+    font-size: 1.5rem;
+  }
+
+  .profile__email,
+  .profile__number {
+    display: inline-flex;
+  }
+
+  video,
+  audio,
+  object,
+  embed,
+  nav {
+    display: none;
+  }
+
+  @page {
+    /* margin: 0.5in; */
+  }
+
+  body {
+    font-size: 11pt;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.3;
+  }
 }

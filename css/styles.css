@@ -1,5 +1,5 @@
 /* >= 5 Rules */
-@import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&family=Prociono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&family=Prociono&display=swap");
 
 :root {
   --mustard: #ffdb58;
@@ -40,7 +40,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Economica', sans-serif;
+  font-family: "Economica", sans-serif;
   font-weight: bold;
 }
 
@@ -55,7 +55,7 @@ h2 {
 
 /* Navigation */
 nav {
-  font-family: 'Economica', sans-serif;
+  font-family: "Economica", sans-serif;
   font-size: 2rem;
 }
 
@@ -68,12 +68,12 @@ nav a {
   color: var(--text-color);
 }
 
-nav ul>li {
+nav ul > li {
   display: inline-block;
   padding: 1.5rem 2rem;
 }
 
-nav ul>li:first-child {
+nav ul > li:first-child {
   margin-left: 3rem;
 }
 
@@ -135,19 +135,19 @@ main {
   --size: 9;
 }
 
-.cloud li:nth-child(2n+1) {
+.cloud li:nth-child(2n + 1) {
   --color: darkgreen;
 }
 
-.cloud li:nth-child(3n+1) {
+.cloud li:nth-child(3n + 1) {
   --color: var(--blue);
 }
 
-.cloud li:nth-child(4n+1) {
+.cloud li:nth-child(4n + 1) {
   --color: var(--red);
 }
 
-.cloud li:nth-child(5n+1) {
+.cloud li:nth-child(5n + 1) {
   --color: var(--dark-blue);
 }
 
@@ -159,4 +159,20 @@ main {
 
   font-size: calc(var(--size) * 0.3rem + 1rem);
   opacity: calc((20 - (8 - var(--size))) / 20);
+}
+
+/* Mobile */
+@media screen and (max-width: 748px) {
+  html {
+    font-size: 9px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  audio {
+    display: none;
+  }
 }
