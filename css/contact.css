@@ -1,0 +1,27 @@
+@import "styles.css";
+
+.nav-link__contact a {
+  color: white;
+}
+
+body {
+  background-color: var(--lightest-grey);
+  border: var(--grey) solid 3rem;
+  border-radius: 2rem;
+}
+
+/* Contact */
+.contact {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    margin: 0 auto;
+  }
+  .contact h1 {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+}
